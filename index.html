@@ -1,0 +1,1801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EchoAI - Self-Evolving Neural Intelligence Platform">
+    <title>EchoAI | Neural Intelligence Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!-- NEURAL PARTICLE BACKGROUND SYSTEM -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <div class="neural-background">
+        <div class="particle-field">
+            <div class="particle particle-1"></div>
+            <div class="particle particle-2"></div>
+            <div class="particle particle-3"></div>
+            <div class="particle particle-4"></div>
+            <div class="particle particle-5"></div>
+            <div class="particle particle-6"></div>
+            <div class="particle particle-7"></div>
+            <div class="particle particle-8"></div>
+            <div class="particle particle-9"></div>
+            <div class="particle particle-10"></div>
+            <div class="particle particle-11"></div>
+            <div class="particle particle-12"></div>
+            <div class="particle particle-13"></div>
+            <div class="particle particle-14"></div>
+            <div class="particle particle-15"></div>
+            <div class="particle particle-16"></div>
+            <div class="particle particle-17"></div>
+            <div class="particle particle-18"></div>
+            <div class="particle particle-19"></div>
+            <div class="particle particle-20"></div>
+        </div>
+        <div class="neural-grid"></div>
+        <div class="ambient-glow glow-1"></div>
+        <div class="ambient-glow glow-2"></div>
+        <div class="ambient-glow glow-3"></div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!-- AUTHENTICATION LAYER -->
+    <!-- Future JS: Handle authentication flow, API token validation -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <section id="auth-layer" class="auth-layer active" data-auth-state="login">
+        
+        <!-- Neural Boot Sequence Screen -->
+        <div id="boot-sequence" class="boot-sequence" data-boot-state="hidden">
+            <div class="boot-container">
+                <div class="neural-core-boot">
+                    <div class="core-orb-boot"></div>
+                    <div class="core-ring ring-1"></div>
+                    <div class="core-ring ring-2"></div>
+                    <div class="core-ring ring-3"></div>
+                </div>
+                <h1 class="boot-title">Initializing Neural Systems</h1>
+                <div class="boot-progress-container">
+                    <div class="boot-progress-bar" data-progress="0">
+                        <div class="boot-progress-fill"></div>
+                    </div>
+                    <p class="boot-status" data-status-text="Connecting to neural network...">
+                        Connecting to neural network...
+                    </p>
+                </div>
+                <div class="system-checks">
+                    <div class="check-item" data-check="memory">
+                        <span class="check-icon"></span>
+                        <span class="check-label">Memory Systems</span>
+                        <span class="check-status" data-status="pending">Pending</span>
+                    </div>
+                    <div class="check-item" data-check="cognitive">
+                        <span class="check-icon"></span>
+                        <span class="check-label">Cognitive Processors</span>
+                        <span class="check-status" data-status="pending">Pending</span>
+                    </div>
+                    <div class="check-item" data-check="vision">
+                        <span class="check-icon"></span>
+                        <span class="check-label">Vision Analysis</span>
+                        <span class="check-status" data-status="pending">Pending</span>
+                    </div>
+                    <div class="check-item" data-check="voice">
+                        <span class="check-icon"></span>
+                        <span class="check-label">Voice Synthesis</span>
+                        <span class="check-status" data-status="pending">Pending</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Login Screen -->
+        <div id="login-screen" class="auth-screen" data-screen="login">
+            <div class="auth-container">
+                <div class="auth-header">
+                    <div class="logo-container">
+                        <div class="logo-orb">
+                            <div class="orb-core"></div>
+                            <div class="orb-glow"></div>
+                        </div>
+                    </div>
+                    <h1 class="auth-title">EchoAI</h1>
+                    <p class="auth-subtitle">Neural Intelligence Platform</p>
+                </div>
+
+                <div class="auth-form-container">
+                    <form id="login-form" class="auth-form" data-form-type="login">
+                        <div class="form-group">
+                            <label for="login-email" class="form-label">Neural ID</label>
+                            <div class="input-wrapper">
+                                <input 
+                                    type="email" 
+                                    id="login-email" 
+                                    class="holographic-input" 
+                                    placeholder="your@neural.id"
+                                    data-input-type="email"
+                                    required
+                                    autocomplete="email"
+                                >
+                                <span class="input-glow"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="login-password" class="form-label">Neural Key</label>
+                            <div class="input-wrapper">
+                                <input 
+                                    type="password" 
+                                    id="login-password" 
+                                    class="holographic-input" 
+                                    placeholder="Enter your neural key"
+                                    data-input-type="password"
+                                    required
+                                    autocomplete="current-password"
+                                >
+                                <span class="input-glow"></span>
+                                <button type="button" class="password-toggle" data-toggle="login-password">
+                                    <span class="toggle-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="auth-button primary-button" data-action="login">
+                            <span class="button-text">Initialize Connection</span>
+                            <span class="button-glow"></span>
+                        </button>
+
+                        <div class="auth-divider">
+                            <span class="divider-line"></span>
+                            <span class="divider-text">or</span>
+                            <span class="divider-line"></span>
+                        </div>
+
+                        <button type="button" class="auth-button secondary-button" data-action="switch-to-signup">
+                            <span class="button-text">Create Neural Profile</span>
+                        </button>
+
+                        <a href="#" class="forgot-link" data-action="forgot-password">
+                            Restore Neural Access
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sign Up Screen -->
+        <div id="signup-screen" class="auth-screen" data-screen="signup">
+            <div class="auth-container">
+                <div class="auth-header">
+                    <div class="logo-container">
+                        <div class="logo-orb">
+                            <div class="orb-core"></div>
+                            <div class="orb-glow"></div>
+                        </div>
+                    </div>
+                    <h1 class="auth-title">Begin Evolution</h1>
+                    <p class="auth-subtitle">Create Your Neural Profile</p>
+                </div>
+
+                <div class="auth-form-container">
+                    <form id="signup-form" class="auth-form" data-form-type="signup">
+                        <div class="form-group">
+                            <label for="signup-name" class="form-label">Identity</label>
+                            <div class="input-wrapper">
+                                <input 
+                                    type="text" 
+                                    id="signup-name" 
+                                    class="holographic-input" 
+                                    placeholder="Your name"
+                                    data-input-type="text"
+                                    required
+                                    autocomplete="name"
+                                >
+                                <span class="input-glow"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="signup-email" class="form-label">Neural ID</label>
+                            <div class="input-wrapper">
+                                <input 
+                                    type="email" 
+                                    id="signup-email" 
+                                    class="holographic-input" 
+                                    placeholder="your@neural.id"
+                                    data-input-type="email"
+                                    required
+                                    autocomplete="email"
+                                >
+                                <span class="input-glow"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="signup-password" class="form-label">Neural Key</label>
+                            <div class="input-wrapper">
+                                <input 
+                                    type="password" 
+                                    id="signup-password" 
+                                    class="holographic-input" 
+                                    placeholder="Create neural key"
+                                    data-input-type="password"
+                                    required
+                                    autocomplete="new-password"
+                                >
+                                <span class="input-glow"></span>
+                                <button type="button" class="password-toggle" data-toggle="signup-password">
+                                    <span class="toggle-icon"></span>
+                                </button>
+                            </div>
+                            <div class="password-strength" data-strength="0">
+                                <div class="strength-bar"></div>
+                                <span class="strength-label">Key Strength</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="signup-confirm" class="form-label">Confirm Neural Key</label>
+                            <div class="input-wrapper">
+                                <input 
+                                    type="password" 
+                                    id="signup-confirm" 
+                                    class="holographic-input" 
+                                    placeholder="Confirm neural key"
+                                    data-input-type="password"
+                                    required
+                                    autocomplete="new-password"
+                                >
+                                <span class="input-glow"></span>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="auth-button primary-button" data-action="signup">
+                            <span class="button-text">Begin Neural Evolution</span>
+                            <span class="button-glow"></span>
+                        </button>
+
+                        <div class="auth-divider">
+                            <span class="divider-line"></span>
+                            <span class="divider-text">or</span>
+                            <span class="divider-line"></span>
+                        </div>
+
+                        <button type="button" class="auth-button secondary-button" data-action="switch-to-login">
+                            <span class="button-text">Access Existing Profile</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!-- MAIN APPLICATION CONTAINER -->
+    <!-- Future JS: Main application state management, screen routing -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <main id="app-container" class="app-container" data-app-state="hidden">
+        
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <!-- FLOATING NAVIGATION BAR -->
+        <!-- Future JS: Navigation control, active screen management -->
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <nav class="main-navigation" data-nav-position="bottom">
+            <div class="nav-container">
+                <button class="nav-item" data-screen-target="chat-core" data-nav-active="true">
+                    <div class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </div>
+                    <span class="nav-label">Chat</span>
+                    <div class="nav-glow"></div>
+                </button>
+
+                <button class="nav-item" data-screen-target="visual-analysis">
+                    <div class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                            <circle cx="12" cy="13" r="4"></circle>
+                        </svg>
+                    </div>
+                    <span class="nav-label">Vision</span>
+                    <div class="nav-glow"></div>
+                </button>
+
+                <button class="nav-item" data-screen-target="story-mode">
+                    <div class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                        </svg>
+                    </div>
+                    <span class="nav-label">Story</span>
+                    <div class="nav-glow"></div>
+                </button>
+
+                <button class="nav-item" data-screen-target="cognitive-map">
+                    <div class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                    </div>
+                    <span class="nav-label">Neural</span>
+                    <div class="nav-glow"></div>
+                </button>
+
+                <button class="nav-item" data-screen-target="flow-mode">
+                    <div class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 20h9"></path>
+                            <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                        </svg>
+                    </div>
+                    <span class="nav-label">Flow</span>
+                    <div class="nav-glow"></div>
+                </button>
+
+                <button class="nav-item" data-screen-target="evolution-chamber">
+                    <div class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                    </div>
+                    <span class="nav-label">Evolve</span>
+                    <div class="nav-glow"></div>
+                </button>
+
+                <div class="nav-indicator" data-indicator-position="0"></div>
+            </div>
+        </nav>
+
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <!-- SCREEN: CHAT CORE -->
+        <!-- Future JS: Message handling, OpenAI API integration, voice toggle -->
+        <!-- Backend hooks: sendMessage(), receiveMessage(), copyMessage() -->
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <section id="chat-core" class="app-screen active" data-screen="chat-core">
+            <div class="screen-container">
+                
+                <!-- Screen Header -->
+                <header class="screen-header">
+                    <div class="header-content">
+                        <h1 class="screen-title">Neural Chat Core</h1>
+                        <p class="screen-subtitle">AI Thinking Assistant</p>
+                    </div>
+                    <div class="header-actions">
+                        <button class="header-button" data-action="voice-toggle" data-voice-active="false">
+                            <svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                                <line x1="12" y1="19" x2="12" y2="23"></line>
+                                <line x1="8" y1="23" x2="16" y2="23"></line>
+                            </svg>
+                        </button>
+                        <button class="header-button" data-action="settings">
+                            <svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path d="M12 1v6m0 6v6m5.2-13.2l-2.1 2.1m-6.2 6.2l-2.1 2.1M23 12h-6m-6 0H5m13.2 5.2l-2.1-2.1m-6.2-6.2l-2.1-2.1"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </header>
+
+                <!-- Chat Interface -->
+                <div class="chat-interface">
+                    
+                    <!-- AI Core Orb Visualization -->
+                    <div class="ai-core-orb" data-state="idle">
+                        <div class="orb-outer">
+                            <div class="orb-middle"></div>
+                            <div class="orb-inner"></div>
+                            <div class="orb-pulse pulse-1"></div>
+                            <div class="orb-pulse pulse-2"></div>
+                            <div class="orb-pulse pulse-3"></div>
+                        </div>
+                        <div class="orb-particles">
+                            <div class="orb-particle"></div>
+                            <div class="orb-particle"></div>
+                            <div class="orb-particle"></div>
+                            <div class="orb-particle"></div>
+                        </div>
+                    </div>
+
+                    <!-- Message Container -->
+                    <div class="message-container" data-message-count="0">
+                        
+                        <!-- Welcome Message -->
+                        <div class="message-group ai-group">
+                            <div class="message ai-message" data-message-type="ai">
+                                <div class="message-content">
+                                    <p>Hello! I'm your neural assistant. How can I help you think deeper today?</p>
+                                </div>
+                                <div class="message-actions">
+                                    <button class="message-action" data-action="copy">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                        </svg>
+                                    </button>
+                                    <button class="message-action" data-action="speak">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- User Message Example (Template) -->
+                        <template id="user-message-template">
+                            <div class="message-group user-group">
+                                <div class="message user-message" data-message-type="user">
+                                    <div class="message-content">
+                                        <p data-message-text></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </template>
+
+                        <!-- AI Message Example (Template) -->
+                        <template id="ai-message-template">
+                            <div class="message-group ai-group">
+                                <div class="message ai-message" data-message-type="ai">
+                                    <div class="message-content">
+                                        <p data-message-text></p>
+                                    </div>
+                                    <div class="message-actions">
+                                        <button class="message-action" data-action="copy">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                            </svg>
+                                        </button>
+                                        <button class="message-action" data-action="speak">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </template>
+
+                    </div>
+
+                    <!-- Suggestion Chips -->
+                    <div class="suggestion-chips" data-suggestions-visible="true">
+                        <button class="suggestion-chip" data-suggestion="Explain quantum computing">
+                            <span class="chip-icon">💡</span>
+                            <span class="chip-text">Explain quantum computing</span>
+                        </button>
+                        <button class="suggestion-chip" data-suggestion="Help me brainstorm">
+                            <span class="chip-icon">🧠</span>
+                            <span class="chip-text">Help me brainstorm</span>
+                        </button>
+                        <button class="suggestion-chip" data-suggestion="Solve a problem">
+                            <span class="chip-icon">🔧</span>
+                            <span class="chip-text">Solve a problem</span>
+                        </button>
+                        <button class="suggestion-chip" data-suggestion="Write creatively">
+                            <span class="chip-icon">✨</span>
+                            <span class="chip-text">Write creatively</span>
+                        </button>
+                    </div>
+
+                    <!-- Input Area -->
+                    <div class="chat-input-area">
+                        <form id="chat-form" class="chat-form" data-form-active="true">
+                            <div class="input-container">
+                                <textarea 
+                                    id="chat-input" 
+                                    class="chat-textarea" 
+                                    placeholder="Share your thoughts..."
+                                    rows="1"
+                                    data-input-mode="text"
+                                    data-max-length="2000"
+                                ></textarea>
+                                <div class="input-glow-effect"></div>
+                            </div>
+                            <button type="submit" class="send-button" data-state="ready">
+                                <svg class="send-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                                <span class="button-glow"></span>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <!-- SCREEN: VISUAL ANALYSIS -->
+        <!-- Future JS: Camera access, image capture, OpenAI Vision API -->
+        <!-- Backend hooks: captureImage(), analyzeImage(), detectProblem() -->
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <section id="visual-analysis" class="app-screen" data-screen="visual-analysis">
+            <div class="screen-container">
+                
+                <!-- Screen Header -->
+                <header class="screen-header">
+                    <div class="header-content">
+                        <h1 class="screen-title">Visual Analysis Core</h1>
+                        <p class="screen-subtitle">Neural Vision Processing</p>
+                    </div>
+                    <div class="header-actions">
+                        <button class="header-button" data-action="switch-camera">
+                            <svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="23 4 23 10 17 10"></polyline>
+                                <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+                            </svg>
+                        </button>
+                        <button class="header-button" data-action="upload-image">
+                            <svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="17 8 12 3 7 8"></polyline>
+                                <line x1="12" y1="3" x2="12" y2="15"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </header>
+
+                <!-- Vision Interface -->
+                <div class="vision-interface">
+                    
+                    <!-- Camera Feed Container -->
+                    <div class="camera-container" data-camera-state="inactive">
+                        <video 
+                            id="camera-feed" 
+                            class="camera-feed" 
+                            autoplay 
+                            playsinline
+                            data-feed-active="false"
+                        ></video>
+                        <canvas 
+                            id="camera-canvas" 
+                            class="camera-canvas"
+                            data-canvas-ready="false"
+                        ></canvas>
+                        
+                        <!-- Scan Animation Overlay -->
+                        <div class="scan-overlay" data-scan-active="false">
+                            <div class="scan-line"></div>
+                            <div class="scan-grid">
+                                <div class="grid-line horizontal"></div>
+                                <div class="grid-line horizontal"></div>
+                                <div class="grid-line horizontal"></div>
+                                <div class="grid-line vertical"></div>
+                                <div class="grid-line vertical"></div>
+                                <div class="grid-line vertical"></div>
+                            </div>
+                            <div class="scan-corners">
+                                <div class="corner top-left"></div>
+                                <div class="corner top-right"></div>
+                                <div class="corner bottom-left"></div>
+                                <div class="corner bottom-right"></div>
+                            </div>
+                        </div>
+
+                        <!-- Camera Inactive State -->
+                        <div class="camera-placeholder" data-placeholder-visible="true">
+                            <div class="placeholder-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                                    <circle cx="12" cy="13" r="4"></circle>
+                                </svg>
+                            </div>
+                            <h3 class="placeholder-title">Neural Vision Ready</h3>
+                            <p class="placeholder-text">Activate camera or upload an image to analyze</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Camera Controls -->
+                    <div class="camera-controls">
+                        <button class="control-button" data-action="activate-camera" data-primary="true">
+                            <svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                            <span class="button-label">Activate Camera</span>
+                            <div class="button-glow"></div>
+                        </button>
+                        <button class="control-button" data-action="capture-image" data-disabled="true">
+                            <svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                                <circle cx="12" cy="13" r="4"></circle>
+                            </svg>
+                            <span class="button-label">Capture</span>
+                        </button>
+                    </div>
+
+                    <!-- Analysis Results Panel -->
+                    <div class="analysis-panel" data-panel-state="hidden">
+                        <div class="panel-header">
+                            <h3 class="panel-title">Neural Analysis</h3>
+                            <button class="panel-close" data-action="close-analysis">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Analysis Content -->
+                        <div class="analysis-content">
+                            
+                            <!-- Problem Detection Box -->
+                            <div class="analysis-section problem-detection" data-problem-detected="false">
+                                <div class="section-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="12" y1="8" x2="12" y2="12"></line>
+                                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                                    </svg>
+                                </div>
+                                <h4 class="section-title">Problem Detection</h4>
+                                <div class="section-content" data-content-placeholder="Scanning for issues...">
+                                    <p class="analysis-text">No problems detected</p>
+                                </div>
+                            </div>
+
+                            <!-- Visual Description -->
+                            <div class="analysis-section visual-description">
+                                <div class="section-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <h4 class="section-title">Visual Analysis</h4>
+                                <div class="section-content" data-content-placeholder="Processing visual data...">
+                                    <p class="analysis-text">Awaiting analysis...</p>
+                                </div>
+                            </div>
+
+                            <!-- Solution Suggestions -->
+                            <div class="analysis-section solution-suggestions" data-solutions-available="false">
+                                <div class="section-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <h4 class="section-title">Solutions</h4>
+                                <div class="section-content" data-content-placeholder="Generating solutions...">
+                                    <p class="analysis-text">No solutions needed</p>
+                                </div>
+                            </div>
+
+                            <!-- Confidence Score -->
+                            <div class="confidence-score" data-confidence="0">
+                                <span class="confidence-label">Analysis Confidence</span>
+                                <div class="confidence-bar">
+                                    <div class="confidence-fill" style="width: 0%"></div>
+                                </div>
+                                <span class="confidence-value">0%</span>
+                            </div>
+
+                        </div>
+
+                        <!-- Panel Actions -->
+                        <div class="panel-actions">
+                            <button class="action-button" data-action="analyze-again">
+                                <span class="button-text">Analyze Again</span>
+                            </button>
+                            <button class="action-button primary" data-action="save-analysis">
+                                <span class="button-text">Save Analysis</span>
+                                <div class="button-glow"></div>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <!-- SCREEN: STORY MODE -->
+        <!-- Future JS: Genre selection, story generation API, voice narration -->
+        <!-- Backend hooks: generateStory(), narrateStory(), saveStory() -->
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <section id="story-mode" class="app-screen" data-screen="story-mode">
+            <div class="screen-container">
+                
+                <!-- Screen Header -->
+                <header class="screen-header">
+                    <div class="header-content">
+                        <h1 class="screen-title">Story Generation Core</h1>
+                        <p class="screen-subtitle">Emotional AI Storytelling</p>
+                    </div>
+                    <div class="header-actions">
+                        <button class="header-button" data-action="story-history">
+                            <svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </button>
+                        <button class="header-button" data-action="story-settings">
+                            <svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                        </button>
+                    </div>
+                </header>
+
+                <!-- Story Interface -->
+                <div class="story-interface">
+                    
+                    <!-- Genre Selection -->
+                    <div class="genre-selection" data-genre-selected="none">
+                        <h3 class="selection-title">Choose Your Story Universe</h3>
+                        
+                        <div class="genre-grid">
+                            
+                            <!-- Genre Card: Fantasy -->
+                            <div class="genre-card" data-genre="fantasy">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <div class="genre-icon">🏰</div>
+                                        <h4 class="genre-name">Fantasy</h4>
+                                        <p class="genre-description">Epic realms of magic and wonder</p>
+                                        <div class="card-glow"></div>
+                                    </div>
+                                    <div class="card-back">
+                                        <h4 class="genre-name">Fantasy</h4>
+                                        <ul class="genre-features">
+                                            <li>Magical worlds</li>
+                                            <li>Mythical creatures</li>
+                                            <li>Epic quests</li>
+                                            <li>Ancient prophecies</li>
+                                        </ul>
+                                        <button class="select-genre-button" data-action="select-genre" data-genre="fantasy">
+                                            <span>Enter Realm</span>
+                                            <div class="button-glow"></div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Genre Card: Sci-Fi -->
+                            <div class="genre-card" data-genre="scifi">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <div class="genre-icon">🚀</div>
+                                        <h4 class="genre-name">Sci-Fi</h4>
+                                        <p class="genre-description">Future technology and space odysseys</p>
+                                        <div class="card-glow"></div>
+                                    </div>
+                                    <div class="card-back">
+                                        <h4 class="genre-name">Sci-Fi</h4>
+                                        <ul class="genre-features">
+                                            <li>Advanced technology</li>
+                                            <li>Space exploration</li>
+                                            <li>AI consciousness</li>
+                                            <li>Quantum realities</li>
+                                        </ul>
+                                        <button class="select-genre-button" data-action="select-genre" data-genre="scifi">
+                                            <span>Launch Mission</span>
+                                            <div class="button-glow"></div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Genre Card: Mystery -->
+                            <div class="genre-card" data-genre="mystery">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <div class="genre-icon">🔍</div>
+                                        <h4 class="genre-name">Mystery</h4>
+                                        <p class="genre-description">Thrilling puzzles and dark secrets</p>
+                                        <div class="card-glow"></div>
+                                    </div>
+                                    <div class="card-back">
+                                        <h4 class="genre-name">Mystery</h4>
+                                        <ul class="genre-features">
+                                            <li>Complex investigations</li>
+                                            <li>Hidden clues</li>
+                                            <li>Unexpected twists</li>
+                                            <li>Dark revelations</li>
+                                        </ul>
+                                        <button class="select-genre-button" data-action="select-genre" data-genre="mystery">
+                                            <span>Begin Investigation</span>
+                                            <div class="button-glow"></div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Genre Card: Romance -->
+                            <div class="genre-card" data-genre="romance">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <div class="genre-icon">💫</div>
+                                        <h4 class="genre-name">Romance</h4>
+                                        <p class="genre-description">Heartfelt connections and emotions</p>
+                                        <div class="card-glow"></div>
+                                    </div>
+                                    <div class="card-back">
+                                        <h4 class="genre-name">Romance</h4>
+                                        <ul class="genre-features">
+                                            <li>Deep connections</li>
+                                            <li>Emotional journeys</li>
+                                            <li>Love and loss</li>
+                                            <li>Character growth</li>
+                                        </ul>
+                                        <button class="select-genre-button" data-action="select-genre" data-genre="romance">
+                                            <span>Feel the Story</span>
+                                            <div class="button-glow"></div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Genre Card: Horror -->
+                            <div class="genre-card" data-genre="horror">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <div class="genre-icon">👻</div>
+                                        <h4 class="genre-name">Horror</h4>
+                                        <p class="genre-description">Psychological terror and fear</p>
+                                        <div class="card-glow"></div>
+                                    </div>
+                                    <div class="card-back">
+                                        <h4 class="genre-name">Horror</h4>
+                                        <ul class="genre-features">
+                                            <li>Psychological terror</li>
+                                            <li>Supernatural entities</li>
+                                            <li>Suspenseful atmosphere</li>
+                                            <li>Dark revelations</li>
+                                        </ul>
+                                        <button class="select-genre-button" data-action="select-genre" data-genre="horror">
+                                            <span>Enter Darkness</span>
+                                            <div class="button-glow"></div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Genre Card: Adventure -->
+                            <div class="genre-card" data-genre="adventure">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <div class="genre-icon">⚔️</div>
+                                        <h4 class="genre-name">Adventure</h4>
+                                        <p class="genre-description">Epic journeys and discoveries</p>
+                                        <div class="card-glow"></div>
+                                    </div>
+                                    <div class="card-back">
+                                        <h4 class="genre-name">Adventure</h4>
+                                        <ul class="genre-features">
+                                            <li>Epic journeys</li>
+                                            <li>Dangerous quests</li>
+                                            <li>Hidden treasures</li>
+                                            <li>Heroic courage</li>
+                                        </ul>
+                                        <button class="select-genre-button" data-action="select-genre" data-genre="adventure">
+                                            <span>Start Journey</span>
+                                            <div class="button-glow"></div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Story Display Container -->
+                    <div class="story-display" data-story-active="false">
+                        
+                        <!-- Story Header -->
+                        <div class="story-header">
+                            <button class="back-button" data-action="back-to-genres">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                                    <polyline points="12 19 5 12 12 5"></polyline>
+                                </svg>
+                                <span>Back to Genres</span>
+                            </button>
+                            <div class="story-meta">
+                                <span class="story-genre" data-current-genre=""></span>
+                                <span class="story-length" data-word-count="0">0 words</span>
+                            </div>
+                        </div>
+
+                        <!-- Story Content -->
+                        <div class="story-content" data-content-ready="false">
+                            <h2 class="story-title" data-story-title="Untitled Story">Generating your story...</h2>
+                            <div class="story-text" data-story-body="">
+                                <p class="story-loading">AI is weaving your tale...</p>
+                            </div>
+                        </div>
+
+                        <!-- Emotional Theme Tags -->
+                        <div class="emotion-tags">
+                            <span class="emotion-tag" data-emotion="wonder">Wonder</span>
+                            <span class="emotion-tag" data-emotion="tension">Tension</span>
+                            <span class="emotion-tag" data-emotion="hope">Hope</span>
+                            <span class="emotion-tag" data-emotion="mystery">Mystery</span>
+                        </div>
+
+                        <!-- Story Controls -->
+                        <div class="story-controls">
+                            <button class="story-button" data-action="regenerate-story">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="23 4 23 10 17 10"></polyline>
+                                    <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+                                </svg>
+                                <span>Regenerate</span>
+                            </button>
+                            <button class="story-button narrate-button" data-action="narrate-story" data-narrating="false">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                                </svg>
+                                <span>Narrate Story</span>
+                                <div class="button-glow"></div>
+                            </button>
+                            <button class="story-button" data-action="save-story">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+                                    <polyline points="17 21 17 13 7 13 7 21"></polyline>
+                                    <polyline points="7 3 7 8 15 8"></polyline>
+                                </svg>
+                                <span>Save</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <!-- SCREEN: COGNITIVE MAP -->
+        <!-- Future JS: Neural network visualization, real-time data flow -->
+        <!-- Backend hooks: loadCognitiveData(), visualizeConnections() -->
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <section id="cognitive-map" class="app-screen" data-screen="cognitive-map">
+            <div class="screen-container">
+                
+                <!-- Screen Header -->
+                <header class="screen-header">
+                    <div class="header-content">
+                        <h1 class="screen-title">Neural Network Map</h1>
+                        <p class="screen-subtitle">Cognitive Visualization System</p>
+                    </div>
+                    <div class="header-actions">
+                        <button class="header-button" data-action="reset-view">
+                            <svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path>
+                                <path d="M21 3v5h-5"></path>
+                                <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path>
+                                <path d="M3 21v-5h5"></path>
+                            </svg>
+                        </button>
+                        <button class="header-button" data-action="toggle-labels">
+                            <svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </header>
+
+                <!-- Neural Map Interface -->
+                <div class="neural-map-interface">
+                    
+                    <!-- Neural Network Visualization Container -->
+                    <div class="neural-network-container" data-network-active="true">
+                        
+                        <!-- Central AI Core Orb -->
+                        <div class="central-core" data-core-state="active">
+                            <div class="core-orb-large">
+                                <div class="core-layer layer-1"></div>
+                                <div class="core-layer layer-2"></div>
+                                <div class="core-layer layer-3"></div>
+                                <div class="core-pulse pulse-wave-1"></div>
+                                <div class="core-pulse pulse-wave-2"></div>
+                                <div class="core-pulse pulse-wave-3"></div>
+                            </div>
+                            <div class="core-label">AI Core</div>
+                        </div>
+
+                        <!-- Neural Nodes -->
+                        <div class="neural-nodes">
+                            
+                            <!-- Node: Chat Core -->
+                            <div class="neural-node" data-node-type="chat" data-node-position="1">
+                                <div class="node-orb">
+                                    <div class="node-inner"></div>
+                                    <div class="node-glow"></div>
+                                </div>
+                                <div class="node-label">Chat Core</div>
+                                <div class="node-activity" data-activity-level="high"></div>
+                            </div>
+
+                            <!-- Node: Visual Analysis -->
+                            <div class="neural-node" data-node-type="vision" data-node-position="2">
+                                <div class="node-orb">
+                                    <div class="node-inner"></div>
+                                    <div class="node-glow"></div>
+                                </div>
+                                <div class="node-label">Visual Analysis</div>
+                                <div class="node-activity" data-activity-level="medium"></div>
+                            </div>
+
+                            <!-- Node: Story Generation -->
+                            <div class="neural-node" data-node-type="story" data-node-position="3">
+                                <div class="node-orb">
+                                    <div class="node-inner"></div>
+                                    <div class="node-glow"></div>
+                                </div>
+                                <div class="node-label">Story Engine</div>
+                                <div class="node-activity" data-activity-level="low"></div>
+                            </div>
+
+                            <!-- Node: Flow Mode -->
+                            <div class="neural-node" data-node-type="flow" data-node-position="4">
+                                <div class="node-orb">
+                                    <div class="node-inner"></div>
+                                    <div class="node-glow"></div>
+                                </div>
+                                <div class="node-label">Flow State</div>
+                                <div class="node-activity" data-activity-level="medium"></div>
+                            </div>
+
+                            <!-- Node: Evolution -->
+                            <div class="neural-node" data-node-type="evolution" data-node-position="5">
+                                <div class="node-orb">
+                                    <div class="node-inner"></div>
+                                    <div class="node-glow"></div>
+                                </div>
+                                <div class="node-label">Evolution</div>
+                                <div class="node-activity" data-activity-level="high"></div>
+                            </div>
+
+                            <!-- Node: Memory System -->
+                            <div class="neural-node" data-node-type="memory" data-node-position="6">
+                                <div class="node-orb">
+                                    <div class="node-inner"></div>
+                                    <div class="node-glow"></div>
+                                </div>
+                                <div class="node-label">Memory</div>
+                                <div class="node-activity" data-activity-level="high"></div>
+                            </div>
+
+                            <!-- Node: Voice System -->
+                            <div class="neural-node" data-node-type="voice" data-node-position="7">
+                                <div class="node-orb">
+                                    <div class="node-inner"></div>
+                                    <div class="node-glow"></div>
+                                </div>
+                                <div class="node-label">Voice</div>
+                                <div class="node-activity" data-activity-level="medium"></div>
+                            </div>
+
+                            <!-- Node: Command System -->
+                            <div class="neural-node" data-node-type="command" data-node-position="8">
+                                <div class="node-orb">
+                                    <div class="node-inner"></div>
+                                    <div class="node-glow"></div>
+                                </div>
+                                <div class="node-label">Commands</div>
+                                <div class="node-activity" data-activity-level="low"></div>
+                            </div>
+
+                        </div>
+
+                        <!-- Data Flow Lines (CSS-based) -->
+                        <svg class="connection-lines" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="flow-gradient-1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" style="stop-color:rgba(99, 102, 241, 0);stop-opacity:0" />
+                                    <stop offset="50%" style="stop-color:rgba(99, 102, 241, 1);stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:rgba(99, 102, 241, 0);stop-opacity:0" />
+                                </linearGradient>
+                            </defs>
+                            
+                            <!-- Connection Lines -->
+                            <line class="connection-line" data-connection="chat" x1="500" y1="500" x2="300" y2="200" stroke="url(#flow-gradient-1)" />
+                            <line class="connection-line" data-connection="vision" x1="500" y1="500" x2="700" y2="200" stroke="url(#flow-gradient-1)" />
+                            <line class="connection-line" data-connection="story" x1="500" y1="500" x2="800" y2="400" stroke="url(#flow-gradient-1)" />
+                            <line class="connection-line" data-connection="flow" x1="500" y1="500" x2="800" y2="600" stroke="url(#flow-gradient-1)" />
+                            <line class="connection-line" data-connection="evolution" x1="500" y1="500" x2="700" y2="800" stroke="url(#flow-gradient-1)" />
+                            <line class="connection-line" data-connection="memory" x1="500" y1="500" x2="300" y2="800" stroke="url(#flow-gradient-1)" />
+                            <line class="connection-line" data-connection="voice" x1="500" y1="500" x2="200" y2="600" stroke="url(#flow-gradient-1)" />
+                            <line class="connection-line" data-connection="command" x1="500" y1="500" x2="200" y2="400" stroke="url(#flow-gradient-1)" />
+                        </svg>
+
+                        <!-- Data Flow Particles -->
+                        <div class="flow-particles">
+                            <div class="flow-particle" data-flow-path="chat"></div>
+                            <div class="flow-particle" data-flow-path="vision"></div>
+                            <div class="flow-particle" data-flow-path="story"></div>
+                            <div class="flow-particle" data-flow-path="flow"></div>
+                            <div class="flow-particle" data-flow-path="evolution"></div>
+                            <div class="flow-particle" data-flow-path="memory"></div>
+                            <div class="flow-particle" data-flow-path="voice"></div>
+                            <div class="flow-particle" data-flow-path="command"></div>
+                        </div>
+
+                    </div>
+
+                    <!-- Network Stats Panel -->
+                    <div class="network-stats-panel">
+                        <h3 class="stats-title">Neural Activity</h3>
+                        
+                        <div class="stats-grid">
+                            
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="stat-content">
+                                    <span class="stat-label">Processing Speed</span>
+                                    <span class="stat-value" data-stat="speed">1.2 GHz</span>
+                                </div>
+                            </div>
+
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                        <path d="M2 17l10 5 10-5"></path>
+                                        <path d="M2 12l10 5 10-5"></path>
+                                    </svg>
+                                </div>
+                                <div class="stat-content">
+                                    <span class="stat-label">Active Connections</span>
+                                    <span class="stat-value" data-stat="connections">8/8</span>
+                                </div>
+                            </div>
+
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="M12 6v6l4 2"></path>
+                                    </svg>
+                                </div>
+                                <div class="stat-content">
+                                    <span class="stat-label">Uptime</span>
+                                    <span class="stat-value" data-stat="uptime">99.8%</span>
+                                </div>
+                            </div>
+
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                                    </svg>
+                                </div>
+                                <div class="stat-content">
+                                    <span class="stat-label">Energy Level</span>
+                                    <span class="stat-value" data-stat="energy">85%</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <!-- SCREEN: FLOW MODE -->
+        <!-- Future JS: Focus timer, word count, level progression -->
+        <!-- Backend hooks: saveFlowSession(), calculateLevel() -->
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <section id="flow-mode" class="app-screen" data-screen="flow-mode">
+            <div class="screen-container">
+                
+                <!-- Screen Header -->
+                <header class="screen-header minimal">
+                    <div class="header-content">
+                        <h1 class="screen-title">Flow State</h1>
+                        <p class="screen-subtitle">Deep Focus Writing Mode</p>
+                    </div>
+                    <div class="header-actions">
+                        <button class="header-button" data-action="toggle-timer">
+                            <svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </button>
+                        <button class="header-button" data-action="flow-settings">
+                            <svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path d="M12 1v6m0 6v6"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </header>
+
+                <!-- Flow Interface -->
+                <div class="flow-interface">
+                    
+                    <!-- Flow Stats Bar -->
+                    <div class="flow-stats-bar">
+                        
+                        <div class="flow-stat">
+                            <span class="stat-icon">✍️</span>
+                            <span class="stat-label">Words</span>
+                            <span class="stat-value" data-word-count="0">0</span>
+                        </div>
+
+                        <div class="flow-stat">
+                            <span class="stat-icon">⏱️</span>
+                            <span class="stat-label">Time</span>
+                            <span class="stat-value" data-flow-time="00:00">00:00</span>
+                        </div>
+
+                        <div class="flow-stat">
+                            <span class="stat-icon">📊</span>
+                            <span class="stat-label">Level</span>
+                            <span class="stat-value" data-flow-level="1">1</span>
+                        </div>
+
+                        <div class="flow-stat">
+                            <span class="stat-icon">🔥</span>
+                            <span class="stat-label">Streak</span>
+                            <span class="stat-value" data-flow-streak="0">0</span>
+                        </div>
+
+                    </div>
+
+                    <!-- Flow Intensity Meter -->
+                    <div class="flow-intensity-meter">
+                        <span class="intensity-label">Flow Intensity</span>
+                        <div class="intensity-bar-container">
+                            <div class="intensity-bar" data-intensity="0">
+                                <div class="intensity-fill"></div>
+                                <div class="intensity-glow"></div>
+                            </div>
+                        </div>
+                        <div class="intensity-markers">
+                            <span class="marker" data-marker="low">Low</span>
+                            <span class="marker" data-marker="medium">Medium</span>
+                            <span class="marker" data-marker="high">High</span>
+                            <span class="marker" data-marker="peak">Peak</span>
+                        </div>
+                    </div>
+
+                    <!-- Focus Text Area -->
+                    <div class="flow-editor-container">
+                        <textarea 
+                            id="flow-textarea" 
+                            class="flow-textarea" 
+                            placeholder="Enter your flow state... Let the words flow without thinking..."
+                            data-flow-active="false"
+                            spellcheck="false"
+                        ></textarea>
+                        <div class="editor-glow-effect"></div>
+                    </div>
+
+                    <!-- Dedicated Enter Button -->
+                    <div class="flow-enter-button-container">
+                        <button class="flow-enter-button" data-action="flow-enter">
+                            <span class="enter-text">ENTER</span>
+                            <span class="enter-subtitle">Submit & Level Up</span>
+                            <div class="enter-glow"></div>
+                            <div class="enter-particles">
+                                <div class="enter-particle"></div>
+                                <div class="enter-particle"></div>
+                                <div class="enter-particle"></div>
+                                <div class="enter-particle"></div>
+                            </div>
+                        </button>
+                    </div>
+
+                    <!-- Level Progress Indicator -->
+                    <div class="level-progress-indicator">
+                        <div class="progress-info">
+                            <span class="progress-label">Level Progress</span>
+                            <span class="progress-percentage" data-progress-percent="0">0%</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" data-progress="0">
+                                <div class="progress-fill"></div>
+                                <div class="progress-shine"></div>
+                            </div>
+                        </div>
+                        <div class="next-level-info">
+                            <span>Next Level: <strong data-next-level-words="500">500</strong> words</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <!-- SCREEN: EVOLUTION CHAMBER -->
+        <!-- Future JS: XP calculation, level up animations, rewards system -->
+        <!-- Backend hooks: calculateXP(), levelUp(), unlockRewards() -->
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <section id="evolution-chamber" class="app-screen" data-screen="evolution-chamber">
+            <div class="screen-container">
+                
+                <!-- Screen Header -->
+                <header class="screen-header">
+                    <div class="header-content">
+                        <h1 class="screen-title">Evolution Chamber</h1>
+                        <p class="screen-subtitle">Infinite Leveling System</p>
+                    </div>
+                    <div class="header-actions">
+                        <button class="header-button" data-action="view-rewards">
+                            <svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="7"></circle>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                            </svg>
+                        </button>
+                        <button class="header-button" data-action="evolution-history">
+                            <svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 3v18h18"></path>
+                                <path d="M18 17l-4-4-4 4-4-4"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </header>
+
+                <!-- Evolution Interface -->
+                <div class="evolution-interface">
+                    
+                    <!-- Evolution Orb -->
+                    <div class="evolution-orb-container">
+                        <div class="evolution-orb" data-evolution-level="1">
+                            <div class="evolution-core">
+                                <div class="core-layer evolution-layer-1"></div>
+                                <div class="core-layer evolution-layer-2"></div>
+                                <div class="core-layer evolution-layer-3"></div>
+                                <div class="core-layer evolution-layer-4"></div>
+                                <div class="level-display" data-current-level="1">
+                                    <span class="level-number">1</span>
+                                </div>
+                            </div>
+                            <div class="evolution-rings">
+                                <div class="evolution-ring ring-1"></div>
+                                <div class="evolution-ring ring-2"></div>
+                                <div class="evolution-ring ring-3"></div>
+                            </div>
+                            <div class="evolution-particles">
+                                <div class="evo-particle"></div>
+                                <div class="evo-particle"></div>
+                                <div class="evo-particle"></div>
+                                <div class="evo-particle"></div>
+                                <div class="evo-particle"></div>
+                                <div class="evo-particle"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Level Information -->
+                    <div class="level-information">
+                        <h2 class="current-level-title">Neural Level <span data-level-number="1">1</span></h2>
+                        <p class="level-rank" data-rank="Initiate">Initiate</p>
+                    </div>
+
+                    <!-- XP Progress Bar -->
+                    <div class="xp-progress-container">
+                        <div class="xp-info">
+                            <span class="xp-label">Experience Points</span>
+                            <span class="xp-values">
+                                <span class="xp-current" data-current-xp="0">0</span>
+                                <span class="xp-separator">/</span>
+                                <span class="xp-required" data-required-xp="1000">1000</span>
+                            </span>
+                        </div>
+                        <div class="xp-bar-outer">
+                            <div class="xp-bar" data-xp-percent="0">
+                                <div class="xp-fill"></div>
+                                <div class="xp-shine"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Evolution Stats -->
+                    <div class="evolution-stats-grid">
+                        
+                        <div class="evolution-stat-card">
+                            <div class="stat-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                            </div>
+                            <div class="stat-card-content">
+                                <h4 class="stat-card-title">Messages Sent</h4>
+                                <p class="stat-card-value" data-stat-messages="0">0</p>
+                            </div>
+                            <div class="stat-card-glow"></div>
+                        </div>
+
+                        <div class="evolution-stat-card">
+                            <div class="stat-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                                    <circle cx="12" cy="13" r="4"></circle>
+                                </svg>
+                            </div>
+                            <div class="stat-card-content">
+                                <h4 class="stat-card-title">Images Analyzed</h4>
+                                <p class="stat-card-value" data-stat-images="0">0</p>
+                            </div>
+                            <div class="stat-card-glow"></div>
+                        </div>
+
+                        <div class="evolution-stat-card">
+                            <div class="stat-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                                </svg>
+                            </div>
+                            <div class="stat-card-content">
+                                <h4 class="stat-card-title">Stories Created</h4>
+                                <p class="stat-card-value" data-stat-stories="0">0</p>
+                            </div>
+                            <div class="stat-card-glow"></div>
+                        </div>
+
+                        <div class="evolution-stat-card">
+                            <div class="stat-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 20h9"></path>
+                                    <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                                </svg>
+                            </div>
+                            <div class="stat-card-content">
+                                <h4 class="stat-card-title">Words in Flow</h4>
+                                <p class="stat-card-value" data-stat-flow-words="0">0</p>
+                            </div>
+                            <div class="stat-card-glow"></div>
+                        </div>
+
+                        <div class="evolution-stat-card">
+                            <div class="stat-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                            </div>
+                            <div class="stat-card-content">
+                                <h4 class="stat-card-title">Total Time</h4>
+                                <p class="stat-card-value" data-stat-time="0h">0h</p>
+                            </div>
+                            <div class="stat-card-glow"></div>
+                        </div>
+
+                        <div class="evolution-stat-card">
+                            <div class="stat-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                            </div>
+                            <div class="stat-card-content">
+                                <h4 class="stat-card-title">Tasks Complete</h4>
+                                <p class="stat-card-value" data-stat-tasks="0">0</p>
+                            </div>
+                            <div class="stat-card-glow"></div>
+                        </div>
+
+                    </div>
+
+                    <!-- Next Level Preview -->
+                    <div class="next-level-preview">
+                        <h3 class="preview-title">Next Evolution</h3>
+                        <div class="preview-content">
+                            <div class="preview-level">
+                                <span class="preview-level-number">Level <strong data-next-level="2">2</strong></span>
+                                <span class="preview-level-rank" data-next-rank="Apprentice">Apprentice</span>
+                            </div>
+                            <div class="preview-rewards">
+                                <span class="rewards-title">Unlocks:</span>
+                                <ul class="rewards-list">
+                                    <li class="reward-item">🎨 Advanced themes</li>
+                                    <li class="reward-item">🔊 New voice options</li>
+                                    <li class="reward-item">⚡ Enhanced processing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <!-- SETTINGS PANEL (Overlays all screens) -->
+        <!-- Future JS: Voice settings, accent selection, memory controls -->
+        <!-- Backend hooks: updateVoiceSettings(), restoreMemory() -->
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <aside id="settings-panel" class="settings-panel" data-panel-open="false">
+            <div class="settings-container">
+                
+                <!-- Panel Header -->
+                <header class="settings-header">
+                    <h2 class="settings-title">Neural Settings</h2>
+                    <button class="close-settings" data-action="close-settings">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </header>
+
+                <!-- Settings Content -->
+                <div class="settings-content">
+                    
+                    <!-- Voice System Settings -->
+                    <section class="settings-section">
+                        <h3 class="section-title">Voice System</h3>
+                        
+                        <div class="setting-item">
+                            <label for="voice-select" class="setting-label">Voice Selection</label>
+                            <div class="select-wrapper">
+                                <select id="voice-select" class="setting-select" data-setting="voice">
+                                    <option value="neural-1">Neural Voice 1 (Default)</option>
+                                    <option value="neural-2">Neural Voice 2</option>
+                                    <option value="neural-3">Neural Voice 3</option>
+                                    <option value="neural-4">Neural Voice 4</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="setting-item">
+                            <label for="accent-select" class="setting-label">Accent</label>
+                            <div class="select-wrapper">
+                                <select id="accent-select" class="setting-select" data-setting="accent">
+                                    <option value="us">US English</option>
+                                    <option value="uk">UK English</option>
+                                    <option value="au">Australian</option>
+                                    <option value="in">Indian</option>
+                                    <option value="ca">Canadian</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="setting-item">
+                            <label for="voice-speed" class="setting-label">
+                                Speech Rate
+                                <span class="setting-value" data-speed-value="1.0">1.0x</span>
+                            </label>
+                            <input 
+                                type="range" 
+                                id="voice-speed" 
+                                class="setting-slider" 
+                                min="0.5" 
+                                max="2.0" 
+                                step="0.1" 
+                                value="1.0"
+                                data-setting="speed"
+                            >
+                        </div>
+
+                        <div class="setting-item">
+                            <label for="voice-pitch" class="setting-label">
+                                Pitch
+                                <span class="setting-value" data-pitch-value="1.0">1.0x</span>
+                            </label>
+                            <input 
+                                type="range" 
+                                id="voice-pitch" 
+                                class="setting-slider" 
+                                min="0.5" 
+                                max="2.0" 
+                                step="0.1" 
+                                value="1.0"
+                                data-setting="pitch"
+                            >
+                        </div>
+
+                    </section>
+
+                    <!-- Memory System Settings -->
+                    <section class="settings-section">
+                        <h3 class="section-title">Memory System</h3>
+                        
+                        <div class="memory-status">
+                            <div class="status-indicator" data-memory-status="active">
+                                <span class="status-dot"></span>
+                                <span class="status-text">Memory Active</span>
+                            </div>
+                            <span class="memory-size" data-memory-size="0 MB">0 MB stored</span>
+                        </div>
+
+                        <div class="memory-log-container">
+                            <h4 class="memory-log-title">Recent Memory Log</h4>
+                            <div class="memory-log" data-log-count="0">
+                                <p class="log-empty">No memory entries yet</p>
+                            </div>
+                        </div>
+
+                        <div class="memory-actions">
+                            <button class="memory-button" data-action="restore-memory">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="1 4 1 10 7 10"></polyline>
+                                    <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+                                </svg>
+                                <span>Restore Memory</span>
+                            </button>
+                            <button class="memory-button danger" data-action="clear-memory">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="3 6 5 6 21 6"></polyline>
+                                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                </svg>
+                                <span>Clear Memory</span>
+                            </button>
+                        </div>
+
+                    </section>
+
+                    <!-- Command System Settings -->
+                    <section class="settings-section">
+                        <h3 class="section-title">Voice Commands</h3>
+                        
+                        <div class="setting-item">
+                            <div class="setting-toggle">
+                                <label for="commands-enabled" class="toggle-label">
+                                    Enable Voice Commands
+                                </label>
+                                <input 
+                                    type="checkbox" 
+                                    id="commands-enabled" 
+                                    class="toggle-checkbox"
+                                    data-setting="commands-enabled"
+                                    checked
+                                >
+                                <label for="commands-enabled" class="toggle-switch"></label>
+                            </div>
+                        </div>
+
+                        <div class="command-list">
+                            <h4 class="command-list-title">Available Commands</h4>
+                            <ul class="command-items">
+                                <li class="command-item">
+                                    <span class="command-trigger">"Schedule meeting..."</span>
+                                    <span class="command-description">Create calendar events</span>
+                                </li>
+                                <li class="command-item">
+                                    <span class="command-trigger">"Remind me to..."</span>
+                                    <span class="command-description">Set reminders</span>
+                                </li>
+                                <li class="command-item">
+                                    <span class="command-trigger">"Call..."</span>
+                                    <span class="command-description">Make phone calls</span>
+                                </li>
+                                <li class="command-item">
+                                    <span class="command-trigger">"Open..."</span>
+                                    <span class="command-description">Launch applications</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </section>
+
+                    <!-- Appearance Settings -->
+                    <section class="settings-section">
+                        <h3 class="section-title">Appearance</h3>
+                        
+                        <div class="setting-item">
+                            <label for="theme-select" class="setting-label">Theme</label>
+                            <div class="select-wrapper">
+                                <select id="theme-select" class="setting-select" data-setting="theme">
+                                    <option value="neural-dark">Neural Dark (Default)</option>
+                                    <option value="neural-light">Neural Light</option>
+                                    <option value="cyberpunk">Cyberpunk</option>
+                                    <option value="minimal">Minimal</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="setting-item">
+                            <div class="setting-toggle">
+                                <label for="animations-enabled" class="toggle-label">
+                                    Enable Animations
+                                </label>
+                                <input 
+                                    type="checkbox" 
+                                    id="animations-enabled" 
+                                    class="toggle-checkbox"
+                                    data-setting="animations"
+                                    checked
+                                >
+                                <label for="animations-enabled" class="toggle-switch"></label>
+                            </div>
+                        </div>
+
+                        <div class="setting-item">
+                            <div class="setting-toggle">
+                                <label for="particles-enabled" class="toggle-label">
+                                    Background Particles
+                                </label>
+                                <input 
+                                    type="checkbox" 
+                                    id="particles-enabled" 
+                                    class="toggle-checkbox"
+                                    data-setting="particles"
+                                    checked
+                                >
+                                <label for="particles-enabled" class="toggle-switch"></label>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <!-- Account Settings -->
+                    <section class="settings-section">
+                        <h3 class="section-title">Account</h3>
+                        
+                        <div class="account-info">
+                            <div class="account-avatar">
+                                <div class="avatar-circle">
+                                    <span class="avatar-initial" data-user-initial="U">U</span>
+                                </div>
+                            </div>
+                            <div class="account-details">
+                                <h4 class="account-name" data-user-name="Neural User">Neural User</h4>
+                                <p class="account-email" data-user-email="user@neural.id">user@neural.id</p>
+                            </div>
+                        </div>
+
+                        <div class="account-actions">
+                            <button class="account-button" data-action="edit-profile">
+                                <span>Edit Profile</span>
+                            </button>
+                            <button class="account-button" data-action="change-password">
+                                <span>Change Password</span>
+                            </button>
+                            <button class="account-button danger" data-action="logout">
+                                <span>Logout</span>
+                            </button>
+                        </div>
+
+                    </section>
+
+                </div>
+
+            </div>
+        </aside>
+
+    </main>
+
+    <!-- Hidden file input for image upload -->
+    <input type="file" id="hidden-file-input" accept="image/*" style="display: none;" data-file-purpose="image-upload">
+
+    <!-- Future JS file will be linked here -->
+    <!-- <script src="app.js"></script> -->
+
+</body>
+</html>
